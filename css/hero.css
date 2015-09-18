@@ -1,0 +1,11 @@
+#hero {
+  /*width: 100%;*/
+  /*margin: 0 auto;*/
+  /*text-align: center;*/
+  /*padding-top: 0.5em;*/
+  display: none; }
+  #hero img {
+    opacity: 0.5;
+    width: 90%; }
+
+/*# sourceMappingURL=hero.css.map */

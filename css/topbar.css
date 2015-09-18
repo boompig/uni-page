@@ -1,0 +1,52 @@
+html, body {
+  width: 100%;
+  font-size: 1em;
+  padding: 0;
+  margin: 0; }
+
+#topbar {
+  font-size: 1.2em;
+  background-color: #424445;
+  padding-top: 0.6em;
+  padding-bottom: 0.7em;
+  width: 100%;
+  color: white; }
+  #topbar .brand {
+    font-family: Copperplate;
+    display: inline-block;
+    padding-left: 1em; }
+  #topbar .brand a {
+    color: white;
+    text-decoration: none; }
+  #topbar .topbar-links-container {
+    display: inline-block; }
+  @media (min-width: 700px) {
+    #topbar .brand {
+      width: 220px; }
+    #topbar .topbar-links-container {
+      width: 450px; } }
+  @media (min-width: 800px) {
+    #topbar .brand {
+      width: 48%; }
+    #topbar .topbar-links-container {
+      width: 48%; } }
+  #topbar .topbar-links {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between; }
+  #topbar .topbar-link-item {
+    font-family: Copperplate; }
+    #topbar .topbar-link-item a {
+      color: #fff;
+      text-decoration: none; }
+  #topbar .topbar-link-item a:hover {
+    color: #3F96F2; }
+  #topbar .brand a:hover {
+    color: #3F96F2; }
+
+/*# sourceMappingURL=topbar.css.map */
