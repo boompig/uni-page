@@ -10,9 +10,9 @@ html, body {
   padding-top: 0.6em;
   padding-bottom: 0.7em;
   width: 100%;
-  color: white; }
+  color: white;
+  font-family: Copperplate, sans-serif; }
   #topbar .brand {
-    font-family: Copperplate;
     display: inline-block;
     padding-left: 1em; }
   #topbar .brand a {
@@ -39,11 +39,9 @@ html, body {
     justify-content: space-between;
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between; }
-  #topbar .topbar-link-item {
-    font-family: Copperplate; }
-    #topbar .topbar-link-item a {
-      color: #fff;
-      text-decoration: none; }
+  #topbar .topbar-link-item a {
+    color: #fff;
+    text-decoration: none; }
   #topbar .topbar-link-item a:hover {
     color: #3F96F2; }
   #topbar .brand a:hover {

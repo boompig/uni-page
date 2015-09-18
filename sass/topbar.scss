@@ -14,9 +14,9 @@ $hover_hl_color: #3F96F2;
     padding-bottom: 0.7em;
     width: 100%;
     color: white;
+    font-family: Copperplate, sans-serif;
 
     .brand {
-        font-family: Copperplate;
         display: inline-block;
         padding-left: 1em;
     }
@@ -60,7 +60,6 @@ $hover_hl_color: #3F96F2;
     }
 
     .topbar-link-item {
-        font-family: Copperplate;
 
         a {
             color: #fff;
