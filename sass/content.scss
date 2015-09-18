@@ -1,8 +1,19 @@
+body {
+    background-color: #555;
+}
+
 #content {
     font-family: Tahoma;
-
+    background-color: #fff;
     margin: 0 auto;
     padding: 1em;
+    max-width: 1000px;
+
+    border-radius: 0 0 .5em .5em;
+
+    @media(min-height: 800px) {
+        height: 700px;
+    }
 
     a {
         text-decoration: none;

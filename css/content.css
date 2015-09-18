@@ -1,7 +1,16 @@
+body {
+  background-color: #555; }
+
 #content {
   font-family: Tahoma;
+  background-color: #fff;
   margin: 0 auto;
-  padding: 1em; }
+  padding: 1em;
+  max-width: 1000px;
+  border-radius: 0 0 .5em .5em; }
+  @media (min-height: 800px) {
+    #content {
+      height: 700px; } }
   #content a {
     text-decoration: none;
     color: #358CE8; }
