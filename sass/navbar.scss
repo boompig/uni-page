@@ -8,18 +8,20 @@ html, body {
 
 $hover_hl_color: #3F96F2;
 $navbar_font: Copperplate;
+$navbar_base_item_size: 1.4em;
 
 nav.navbar {
     border: 0;
     border-radius: 0;
     font-family: $navbar_font;
-    font-size: 1.3em;
+    font-size: $navbar_base_item_size;
 
     // nothing
     background-color: #424445;
 
     a.navbar-brand {
         color: white;
+        font-size: 1.4em;
     }
 
     a.navbar-brand:hover {

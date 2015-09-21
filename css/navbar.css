@@ -9,10 +9,11 @@ nav.navbar {
   border: 0;
   border-radius: 0;
   font-family: Copperplate;
-  font-size: 1.3em;
+  font-size: 1.4em;
   background-color: #424445; }
   nav.navbar a.navbar-brand {
-    color: white; }
+    color: white;
+    font-size: 1.4em; }
   nav.navbar a.navbar-brand:hover {
     color: #3F96F2; }
   nav.navbar button.navbar-toggle {
