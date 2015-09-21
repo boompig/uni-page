@@ -1,0 +1,20 @@
+{
+  "name": "dbkats-cs",
+  "version": "0.0.0",
+  "homepage": "https://www.cs.toronto.edu/~dbkats",
+  "authors": [
+    "Daniel Kats <dbkats@cs.toronto.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  },
+  "private": true
+}

@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <title>Daniel Kats | University of Toronto</title>
 
-    <link rel="stylesheet" href="css/topbar.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/content.css" />
     <link rel="stylesheet" href="css/hero.css" />
 
     <link rel="icon" type="image/png" href="img/ut_logo_round.png" />
 </head>
 <body>
-    <div id="topbar" role="nav">
-        <span class="brand">
-            <a href="#">Daniel Kats</a>
-        </span>
-        <span class="topbar-links-container">
-            <span class="topbar-links">
-                <span class="topbar-link-item">
-                    <a href="#research">Research</a>
-                </span>
-                <span class="topbar-link-item">
-                    <a href="#teaching">Teaching</a>
-                </span>
-                <span class="topbar-link-item">
-                    <a href="#personal_projects">Personal Projects</a>
-                </span>
-            </span>
-        </span>
-    </div>
+    <nav class="navbar navbar-default" role="nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dbkats-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Daniel Kats</a>
+            </div>
+            <div class="collapse navbar-collapse" id="dbkats-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#research">Research</a>
+                    </li>
+                    <li>
+                        <a href="#teaching">Teaching</a>
+                    </li>
+                    <li>
+                        <a href="#personal_projects">Personal Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div id="hero">
         <img src="img/code_screenshot_1.png" />
@@ -59,5 +69,8 @@
             </div>
         </div>
     </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
