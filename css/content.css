@@ -2,7 +2,8 @@
   background-color: #fff;
   margin: 0 auto;
   max-width: 800px;
-  z-index: 100; }
+  z-index: 100;
+  padding-left: 1em; }
   #content h1 {
     color: #444;
     font-size: 3.2em;
