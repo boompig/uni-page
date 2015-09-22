@@ -1,12 +1,25 @@
 #hero {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -100;
+    width: 100%;
+
+    padding: 50px;
+
+    opacity: 0.2;
+
+    .hero-item {
+        z-index: -3;
+    }
     /*width: 100%;*/
     /*margin: 0 auto;*/
     /*text-align: center;*/
     /*padding-top: 0.5em;*/
-    display: none;
+    /*display: none;*/
 
-    img {
-        opacity: 0.5;
-        width: 90%;
-    }
+    /*img {*/
+        /*opacity: 0.5;*/
+        /*width: 90%;*/
+    /*}*/
 }

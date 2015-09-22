@@ -9,6 +9,7 @@ html, body {
 $hover_hl_color: #3F96F2;
 $navbar_font: Copperplate;
 $navbar_base_item_size: 1.4em;
+$link_transition_time: .5s;
 
 nav.navbar {
     border: 0;
@@ -22,6 +23,9 @@ nav.navbar {
     a.navbar-brand {
         color: white;
         font-size: 1.4em;
+        -webkit-transition: $link_transition_time;
+        -moz-transition: $link_transition_time;
+        transition: $link_transition_time;
     }
 
     a.navbar-brand:hover {
@@ -41,7 +45,11 @@ nav.navbar {
         color: white;
 
         a {
+
             color: white;
+            -webkit-transition: $link_transition_time;
+            -moz-transition: $link_transition_time;
+            transition: $link_transition_time;
         }
 
         a:hover {

@@ -13,7 +13,10 @@ nav.navbar {
   background-color: #424445; }
   nav.navbar a.navbar-brand {
     color: white;
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s; }
   nav.navbar a.navbar-brand:hover {
     color: #3F96F2; }
   nav.navbar button.navbar-toggle {
@@ -24,7 +27,10 @@ nav.navbar {
   nav.navbar ul.navbar-nav.nav li {
     color: white; }
     nav.navbar ul.navbar-nav.nav li a {
-      color: white; }
+      color: white;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      transition: 0.5s; }
     nav.navbar ul.navbar-nav.nav li a:hover {
       color: #3F96F2; }
 

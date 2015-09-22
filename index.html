@@ -41,7 +41,7 @@
     </nav>
 
     <div id="hero">
-        <img src="img/code_screenshot_1.png" />
+        <!--<img src="img/code_screenshot_1.png" />-->
     </div>
 
     <div id="content">
@@ -72,5 +72,34 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        function showScriptText (scriptText, index) {
+            if (index >= scriptText.length) return;
+            var c = scriptText[index];
+            var tagName = "span";
+            if (scriptText[index] == " ") {
+                c = "&nbsp;";
+            } else  if (scriptText[index] == "\n") {
+                tagName = "div";
+                //c = "<br>";
+            }
+            var newSpan = $("<" + tagName + "></" + tagName + "span>")
+                .addClass("hero-item")
+                .html(c).hide()
+                .appendTo("#hero").fadeIn("slow");
+            window.setTimeout(function () {
+                showScriptText(scriptText, index + 1);
+            }, 10);
+        }
+
+        $(function () {
+            var allScripts = $("script");
+            var script = allScripts[allScripts.length - 1];
+            // trim
+            var scriptText = script.text.replace(/^\s+|\s+$/g, "");
+            //showScriptText(scriptText, 0);
+        });
+
+    </script>
 </body>
 </html>
