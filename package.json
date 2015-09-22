@@ -1,26 +1,29 @@
 {
-    "name": "dbkats-cs",
-    "version": "0.0.1",
-    "main": "index.js",
-    "dependencies": {
-        "express": "^4.13.3",
-        "body-parser": "^1.14.0",
-        "sass": "^0.5.0",
-        "node-sass": "^3.3.3"
-    },
-    "devDependencies": {},
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/boompig/uni-page.git"
-    },
-    "author": "Daniel Kats <dbkats@cs.toronto.edu>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/boompig/uni-page/issues"
-    },
-    "homepage": "https://github.com/boompig/uni-page",
-    "private": true
+  "name": "dbkats-cs",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.14.0",
+    "clean-css": "^3.4.4",
+    "express": "^4.13.3",
+    "node-sass": "^3.3.3",
+    "sass": "^0.5.0",
+    "uglify-js": "^2.4.24"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boompig/uni-page.git"
+  },
+  "author": "Daniel Kats <dbkats@cs.toronto.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boompig/uni-page/issues"
+  },
+  "homepage": "https://github.com/boompig/uni-page",
+  "private": true
 }

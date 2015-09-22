@@ -6,9 +6,9 @@
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/content.css" />
-    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="dist/css/navbar.css" />
+    <link rel="stylesheet" href="dist/css/content.css" />
+    <link rel="stylesheet" href="dist/css/hero.css" />
 
     <link rel="icon" type="image/png" href="img/ut_logo_round.png" />
 </head>
@@ -72,34 +72,5 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        function showScriptText (scriptText, index) {
-            if (index >= scriptText.length) return;
-            var c = scriptText[index];
-            var tagName = "span";
-            if (scriptText[index] == " ") {
-                c = "&nbsp;";
-            } else  if (scriptText[index] == "\n") {
-                tagName = "div";
-                //c = "<br>";
-            }
-            var newSpan = $("<" + tagName + "></" + tagName + "span>")
-                .addClass("hero-item")
-                .html(c).hide()
-                .appendTo("#hero").fadeIn("slow");
-            window.setTimeout(function () {
-                showScriptText(scriptText, index + 1);
-            }, 10);
-        }
-
-        $(function () {
-            var allScripts = $("script");
-            var script = allScripts[allScripts.length - 1];
-            // trim
-            var scriptText = script.text.replace(/^\s+|\s+$/g, "");
-            //showScriptText(scriptText, 0);
-        });
-
-    </script>
 </body>
 </html>

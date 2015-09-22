@@ -1,4 +1,14 @@
 .sass-cache
 .DS_Store
+
+# server-side modules are installed from package.json
 node_modules
+# client-side modules are installed from bower.json
+bower_components
+# server-only tests do not leave this host
 test
+# CSS files are compiled from sass files
+src/css/*.css
+src/css/*.css.map
+# uglified files are not committed
+dist
