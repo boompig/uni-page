@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ ! -d "node_modules" ]
+if [ ! -f "bower.json" ]
 then
     cd ..
 fi
