@@ -7,7 +7,7 @@ html, body {
 }
 
 $hover_hl_color: #3F96F2;
-$navbar_font: Copperplate;
+$navbar_font: monospace;
 $navbar_base_item_size: 1.4em;
 $link_transition_time: .5s;
 
@@ -16,6 +16,7 @@ nav.navbar {
     border-radius: 0;
     font-family: $navbar_font;
     font-size: $navbar_base_item_size;
+    font-variant: small-caps;
 
     // nothing
     background-color: #424445;
