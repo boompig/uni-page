@@ -20,14 +20,14 @@
         text-decoration: none; /* do not underline */
     }
 
-    p {
+    p,ul,ol {
         font-size: 1.1em;
     }
 
     a {
         font-size: 1.1em;
     }
-    p>a {
+    p>a, li>a {
         font-size: 1em;
     }
 }
