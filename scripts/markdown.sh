@@ -7,6 +7,13 @@ then
     cd ..
 fi
 
+dest="templates/markdown_html"
+
+if [ ! -d "$dest" ]
+then
+    mkdir -p "$dest"
+fi
+
 for file in markdown/*
 do
     echo "[$SCRIPT_NAME] Converting $file to html..."
