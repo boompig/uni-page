@@ -12,3 +12,8 @@ src/css/*.css
 src/css/*.css.map
 # uglified files are not committed
 dist
+# markdown compiled to HTML
+templates/markdown_html
+
+# fully compiled article
+instructions.html
