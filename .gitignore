@@ -17,3 +17,5 @@ templates/markdown_html
 
 # fully compiled article
 csc369-virtualbox-instructions.html
+index.html
+csc369_index.html
