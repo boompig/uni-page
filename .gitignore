@@ -16,4 +16,4 @@ dist
 templates/markdown_html
 
 # fully compiled article
-instructions.html
+csc369-virtualbox-instructions.html
