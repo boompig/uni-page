@@ -14,10 +14,15 @@ then
     mkdir -p "$dest"
 fi
 
-for file in markdown/*
+for src_file in markdown/*
 do
-    echo "[$SCRIPT_NAME] Converting $file to html..."
-    new_name=`basename "$file" | sed s/.md/.html/`
-    marked "$file" -o "templates/markdown_html/$new_name"
-    echo "[$SCRIPT_NAME] done"
+    new_name=`basename "$src_file" | sed s/.md/.html/`
+    dest_file="templates/markdown_html/$new_name"
+    if [ -f "$dest_file" ] && [ "$src_file" -nt "$dest_file" ]
+    then
+        echo "[$SCRIPT_NAME] Converting $src_file -> $dest_file"
+        marked "$src_file" -o "$dest_file"
+    else
+        echo "[$SCRIPT_NAME] Skipping unmodified file $src_file"
+    fi
 done

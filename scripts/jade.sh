@@ -7,13 +7,23 @@ then
     cd ..
 fi
 
-for file in templates/*
+output_dir="$(pwd)"
+
+for src_file in templates/*
 do
-    if [ -f "$file" ]
+    if [ -f "$src_file" ]
     then
-        echo "[$SCRIPT_NAME] Attempting to compile $file to HTML..."
-        # . refers to us being in top-level directory
-        jade "$file" -o .
-        echo "[$SCRIPT_NAME] done"
+        base_jade_filename=$(basename $src_file)
+        base_filename=`echo $base_jade_filename | sed s/\.jade/.html/`
+        dest_file="$output_dir/$base_filename"
+
+        if [ -f "$dest_file" ] && [ "$src_file" -nt "$dest_file" ]
+        then
+            echo "[$SCRIPT_NAME] Compiling $src_file -> $dest_file"
+            rm -f "$dest_file"
+            jade "$src_file" -o "$dest_file"
+        else
+            echo "[$SCRIPT_NAME] Skipping unmodified file $src_file"
+        fi
     fi
 done
