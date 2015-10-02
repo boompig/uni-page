@@ -18,7 +18,7 @@ for src_file in markdown/*
 do
     new_name=`basename "$src_file" | sed s/.md/.html/`
     dest_file="templates/markdown_html/$new_name"
-    if [ -f "$dest_file" ] && [ "$src_file" -nt "$dest_file" ]
+    if [ ! -f "$dest_file" ] || [ "$src_file" -nt "$dest_file" ]
     then
         echo "[$SCRIPT_NAME] Converting $src_file -> $dest_file"
         marked "$src_file" -o "$dest_file"
