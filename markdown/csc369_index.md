@@ -6,3 +6,4 @@
 
 * [Week 1](csc369/exercise1.docx)
 * Week 2 (no exercises this week)
+* [Week 3](csc369/hippo.docx)
