@@ -2,9 +2,14 @@
 
 This is the webpage for my site
 
+# Configuration
+
+* change `url` and `baseurl` in _config.yml
+
 # Installation
 
-* install node
-* `npm install -g marked`
-* `npm install -g jade`
-* run `scripts/deploy.sh` shell script
+* install bower
+* run `bower install`
+* install Jekyll
+* run `jekyll build`
+
