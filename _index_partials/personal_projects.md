@@ -1,3 +1,7 @@
+---
+# front matter to render properly
+---
+
 # Personal Projects
 
 * [Blog](https://boompig.herokuapp.com/)

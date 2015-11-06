@@ -1,3 +1,8 @@
+---
+layout: default
+---
+
+
 # Copying Files from Host to VM in Virtualbox
 
 ## Overview

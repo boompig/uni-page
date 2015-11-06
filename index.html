@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<div class="content-inner-container">
+    {% for post in site.index_partials %}
+        {{ post.content }}
+    {% endfor %}
+</div>
