@@ -4,9 +4,9 @@
     <!-- viewport for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{ "/bower_components/bootstrap/dist/css/bootstrap.min.css" | prepend: site.baseurl }}" />
 
-    <link rel="icon" type="image/png" href="/assets/img/ut_logo_round.png" />
+    <link rel="icon" type="image/png" href="{{ "/assets/img/ut_logo_round.png" | prepend: site.baseurl }}" />
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <title>Daniel Kats - Department of Computer Science</title>
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 </head>
